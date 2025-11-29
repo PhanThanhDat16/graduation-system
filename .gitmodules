@@ -1,0 +1,9 @@
+[submodule "api"]
+	path = api
+	url = https://github.com/PhanThanhDat16/graduation-api.git
+[submodule "admin"]
+	path = admin
+	url = https://github.com/PhanThanhDat16/graduation-admin.git
+[submodule "client"]
+	path = client
+	url = https://github.com/PhanThanhDat16/graduation-client.git
