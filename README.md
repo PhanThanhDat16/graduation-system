@@ -33,7 +33,7 @@ This repository contains three submodules:
 1. Clone the repository with submodules:
 
 ```sh
-git clone --recurse-submodules https://github.com/PhanThanhDat16/my-project.git
+git clone --recurse-submodules https://github.com/PhanThanhDat16/graduation-system.git
 ```
 
 - If you forgot --recurse-submodules, run after clone:
