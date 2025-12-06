@@ -7,3 +7,6 @@
 [submodule "client"]
 	path = client
 	url = https://github.com/PhanThanhDat16/graduation-client.git
+[submodule "ai"]
+	path = ai
+	url = https://github.com/PhanThanhDat16/graduation-ai.git
