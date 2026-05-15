@@ -10,6 +10,8 @@ services:
       - CHOKIDAR_USEPOLLING=true
     depends_on:
       - api
+    networks:
+      - graduation_network
 
   admin:
     build: ./admin
@@ -22,6 +24,8 @@ services:
       - CHOKIDAR_USEPOLLING=true
     depends_on:
       - api
+    networks:
+      - graduation_network
 
   api:
     build: ./api
@@ -32,6 +36,8 @@ services:
       - /app/node_modules
     environment:
       - CHOKIDAR_USEPOLLING=true
+    networks:
+      - graduation_network
 
   ai:
     build:
@@ -42,3 +48,13 @@ services:
       - "8003:8003"
     volumes:
       - ./ai:/app
+    environment:
+      - BACKEND_API_URL=http://api:5000
+    depends_on:
+      - api
+    networks:
+      - graduation_network
+
+networks:
+  graduation_network:
+    driver: bridge
